@@ -1,7 +1,7 @@
 
 #'Converts a binary phenotype tree to a vector of foreground species names
 #' @param tree a phylo object with binary edge lengths (foreground edges = 1, background edges = 0)
-#' @return a vector of foreground species names
+#' @return foregrounds a vector of foreground species names
 #' @export
 getForegroundsFromTree=function(tree){
   edge_length = tree$edge.length
@@ -71,3 +71,65 @@ getTipDaughterNames=function(node,tree,allEdges,num_tips){
   daughter_names
 }
 
+
+
+#'Converts foreground species names into a binary phenotype tree with the given topology
+#' @param foregrounds a character vector of foreground species
+#' @param topology a phylo object representing the intended tree topology
+#' @param plotTree Boolean flag for plotting the resulting binary tree
+#' @return treeout binary phenotype tree
+#' @export
+getTreeFromForegrounds=function(foregrounds, topology, plotTree=F){
+  treeout = topology
+  treeout$edge.length = rep(0, length(topology$edge.length))
+  
+  fgNodeIDs = unlist(lapply(foregrounds, findNodeID, tree=treeout))
+  ind_fg_edges = which(treeout$edge[,2] %in% fgNodeIDs)
+  treeout$edge.length[ind_fg_edges] = 1
+  if (plotTree){
+    plot(treeout)
+  }
+  treeout
+}
+
+#' @keywords internal
+findNodeID=function(species_name, tree){
+  if (grepl("-", species_name)){
+    tip_daughters = strsplit(species_name, "-")[[1]]
+    tip_daughters_ID = which(tree$tip.label %in% tip_daughters)
+    nodeID = findCommonAncestorNode(tip_daughters_ID, tree)
+  } else {
+    nodeID = which(tree$tip.label == species_name)
+  }
+  nodeID
+}
+
+#' @keywords internal
+findCommonAncestorNode=function(nodeIDs, tree){
+  num_nodes = length(nodeIDs)
+  
+  allEdges = tree$edge
+  
+  destin_nodes = nodeIDs
+  
+  all_anc_nodes = NULL
+  ancestor_found = FALSE
+  while (!ancestor_found){
+    ind_edges_iter = which(allEdges[,2] %in% destin_nodes)
+    edges_iter = allEdges[ind_edges_iter,]
+    
+    source_nodes = edges_iter[,1]
+    all_anc_nodes = c(all_anc_nodes, source_nodes)
+    table_anc_nodes = table(all_anc_nodes)
+    
+    if (length(which(table_anc_nodes == length(nodeIDs)))){
+      ancestor_found = TRUE
+      ind_ca = which(table_anc_nodes == length(nodeIDs))
+      ca = names(table_anc_nodes)[ind_ca]
+    } else {
+      destin_nodes = unique(source_nodes)
+    }
+  }
+  
+  as.numeric(ca)
+}
