@@ -57,7 +57,7 @@ getTipDaughterNodes=function(node, allEdges, num_tips){
     } else {
       ind_anc_daughters = which(alldaughters > num_tips)
       for (i in 1:length(ind_anc_daughters)){
-        daughters = c(alldaughters[ind_tip_daughters],getTipDaughters(alldaughters[ind_anc_daughters[i]], allEdges, num_tips))
+        daughters = c(alldaughters[ind_tip_daughters],getTipDaughterNodes(alldaughters[ind_anc_daughters[i]], allEdges, num_tips))
       }
     }
   }
