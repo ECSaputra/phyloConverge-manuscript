@@ -1,3 +1,5 @@
+require("rphast")
+
 #'Subset foreground species based on existing species in alignment file
 #' @param align alignment object read from read.msa
 #' @param foregrounds character vector containing the foreground species
@@ -39,4 +41,33 @@ getElementsInMaf=function(elements_bed, maf){
 		elements_in_maf = NULL
 	}
 	elements_in_maf
+}
+
+
+#'Convert a BED matrix/data.frame containing information on genetic elements into a features object
+#' @param bed_file a BED format matrix/data frame containing a list of genetic elements with their chromosome, coordinates, and name (optional)
+#' @param refseq the name of the sequence in the alignment that is used as a frame of reference
+#' @param feature the feature type name (e.g., "exon", "intron", "CDS", etc. Default NULL)
+#' @param strand a character string denoting the strand (e.g. "+", "-". Default NULL if strand is not relevant)
+#' @param frame a 0, 1, or 2 specifying whether the feature is in frame
+#' @return featureout a features object ready to use for phyloConverge
+#' @export
+convertBedToFeature=function(bed_file, refseq, feature=NULL, strand=NULL, frame=NULL){
+	if (ncol(bed_file) < 3){
+		stop("Incomplete bed file.")
+	}
+	
+	
+	
+	if (ncol(bed_file) > 3){
+		attribute = bed_file[,4]
+	} else {
+		attribute = NULL
+	}
+	
+	if (is.null(feature)){
+		feature="."
+	}
+	featureout = feat(seqname= refseq, feature=".", start=bed_file[,2], end=bed_file[,3], attribute=attribute)
+	featureout
 }
