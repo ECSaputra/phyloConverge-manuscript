@@ -83,17 +83,3 @@ phyloConverge=function(feature, foregrounds, permulated_foregrounds, maf, neutra
 
 
 
-getElementsInMaf=function(elements_bed, maf){
-	coord_range = coord.range.msa(maf)
-
-	ind_elements_in_maf = intersect(which(elements_bed[,2] >= coord_range[1]), which(elements_bed[,3] <= coord_range[2]))
-
-	if (length(ind_elements_in_maf) > 0){
-		elements_in_maf = elements_bed[ind_elements_in_maf,]
-	} else {
-		elements_in_maf = NULL
-	}
-	elements_in_maf
-}
-
-
