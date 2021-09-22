@@ -1,6 +1,7 @@
 source("misc_functions.R")
 require("rphast")
 
+
 #'Computes bias-corrected conservation/acceleration score of a given feature using maximum likelihood estimation of branch scaling and phylogenetic permulations (phylogeny-aware permutation test)
 #' @param feature a feature object containing information on chromosome, coordinates, and name of the feature to be scored
 #' @param foregrounds a character vector containing the names of the foreground species
@@ -9,77 +10,82 @@ require("rphast")
 #' @param neutralMod neutral nucleutide substitution model
 #' @param alpha target significance level to control for
 #' @param min.fg minimum number of foreground species required
-#' @param parallelize Boolean flag for parallelizing the operation
 #' @param method scoring method for phyloP (default "LRT")
 #' @param mode scoring mode for phyloP (default "CONACC")
-#' @param output_phyloP Boolean flag for outputting phyloP scores alongside phyloConverge permulation p-values
-#' @return out phyloConverge permulation p-values if output_phyloP = FALSE, or a list object containing phyloConverge permulation p-values and phyloP scores if output_phyloP = TRUE
+#' @param adapt Boolean flag for performing adaptive permulation (adapt = TRUE for adaptive permulation, adapt = FALSE for complete permulations, default TRUE)
+#' @return out phyloConverge a data frame containing phyloConverge permulation p-values, corrected score, and uncorrected score (negative score denotes acceleration, positive score denotes deceleration)
 #' @export
-phyloConverge=function(feature, foregrounds, permulated_foregrounds, maf, neutralMod, alpha=0.05, min.fg=2, parallelize=F, method="LRT", mode="CONACC", output_phyloP=T){
-        
+phyloConverge=function(feature, foregrounds, permulated_foregrounds, maf, neutralMod, alpha=0.05, min.fg=2, method="LRT", mode="CONACC", adapt=T){
         ### observed phyloP score
         fg_exist = checkForegrounds(maf, foregrounds)
         if (length(fg_exist) >= min.fg){
-                observed.score = phyloP(neutralMod, msa=maf, features=feature, method=method, mode=mode, branches=fg_exist)
+                observed.score = phyloP(neutralMod, msa=maf, features=feature, method="LRT", mode="CONACC", branches=fg_exist)
                 observed.score = observed.score$score
-                if (sign(observed.score) > 0){
-                        rate_shift = "deceleration"
-                        permulate = T
-                } else if (sign(observed.score) < 0){
-                        rate_shift = "acceleration"
-                        permulate = T
-                } else {
-                        permulate = F
-                        permPval = NA
-                }
-
-                if (permulate){
-                        ######## permulation
+                
+                if (adapt){
                         max_permulations = length(permulated_foregrounds)
-                        maxnum_extreme = round(alpha*max_permulations)
-
+                        maxnum_extreme = round(alpha*max_permulations) ### centering on median --> the same pruning threshold on both sides
+                        
                         permulated_scores = rep(NA, length(permulated_foregrounds))
-
-                        ############### here's where parallelization can be an option
+                        
                         for (i in 1:length(permulated_foregrounds)){
-				#print(i)
                                 fg_exist = checkForegrounds(maf, permulated_foregrounds[[i]])
                                 if (length(fg_exist) >= min.fg){
-                                        permulated_score_i = phyloP(neutralMod, msa=maf, features=feature, method=method, mode=mode, branches=fg_exist)
+                                        permulated_score_i = phyloP(neutralMod, msa=maf, features=feature, method="LRT", mode="CONACC", branches=fg_exist)
                                         permulated_scores[i] = permulated_score_i$score
                                         computed_permulated_scores = permulated_scores[!is.na(permulated_scores)]
-                                        if (length(computed_permulated_scores) >= maxnum_extreme){
-                                                if (rate_shift == "deceleration"){
-                                                        ind_nonextreme = which(computed_permulated_scores <= observed.score)
-                                                        ind_extreme = which(computed_permulated_scores > observed.score)
-                                                        if (length(ind_extreme) > maxnum_extreme || i == length(permulated_foregrounds)){
-                                                                permPval = min(maxnum_extreme+1, length(ind_extreme)+1)/min(length(computed_permulated_scores)+1, length(permulated_foregrounds)+1)
-								break
-                                                        }
-                                                } else if (rate_shift == "acceleration"){
-                                                        ind_nonextreme = which(computed_permulated_scores >= observed.score)
-                                                        ind_extreme = which(computed_permulated_scores < observed.score)
-                                                        if (length(ind_extreme) > maxnum_extreme || i == length(permulated_foregrounds)){
-                                                                permPval = min(maxnum_extreme+1, length(ind_extreme)+1)/min(length(computed_permulated_scores)+1, length(permulated_foregrounds)+1)
-								break
-                                                        }
+                                        if (length(computed_permulated_scores) >= 2*maxnum_extreme){
+                                                median_null_scores = median(computed_permulated_scores)
+                                                
+                                                if (observed.score <= median_null_scores){
+                                                        one_sided_null_scores = computed_permulated_scores[which(computed_permulated_scores < median_null_scores)]
+                                                        ind_nonextreme = which(one_sided_null_scores > observed.score)
+                                                        ind_extreme = which(one_sided_null_scores <= observed.score)
+                                                } else if (observed.score > median_null_scores){
+                                                        one_sided_null_scores = computed_permulated_scores[which(computed_permulated_scores > median_null_scores)]
+                                                        ind_nonextreme = which(one_sided_null_scores < observed.score)
+                                                        ind_extreme = which(one_sided_null_scores >= observed.score)
+                                                }
+                                                
+                                                if (length(ind_extreme) > maxnum_extreme || i == length(permulated_foregrounds)){
+                                                        permPval = min(maxnum_extreme+1, length(ind_extreme)+1)/(length(one_sided_null_scores)+1)   ###min(length(computed_permulated_scores)+1, length(permulated_foregrounds)+1)
+                                                        corr_score = sign(observed.score-median_null_scores)*(-log10(permPval))
+                                                        break
                                                 }
                                         }
                                 }
                         }
+                } else {
+                        permulated_scores = rep(NA, length(permulated_foregrounds))
+                        for (i in 1:length(permulated_foregrounds)){
+                                fg_exist = checkForegrounds(maf, permulated_foregrounds[[i]])
+                                if (length(fg_exist) >= min.fg){
+                                        permulated_score_i = phyloP(neutralMod, msa=maf, features=feature, method="LRT", mode="CONACC", branches=fg_exist)
+                                        permulated_scores[i] = permulated_score_i$score
+                                }
+                        }
+                        computed_permulated_scores = permulated_scores[!is.na(permulated_scores)]
+                        
+                        median_null_scores = median(computed_permulated_scores)
+                        if (observed.score <= median_null_scores){
+                                one_sided_null_scores = computed_permulated_scores[which(computed_permulated_scores < median_null_scores)]
+                                ind_extreme = which(one_sided_null_scores <= observed.score)
+                        } else if (observed.score > median_null_scores){
+                                one_sided_null_scores = computed_permulated_scores[which(computed_permulated_scores > median_null_scores)]
+                                ind_extreme = which(one_sided_null_scores >= observed.score)
+                        }
+                        
+                        permPval = (length(ind_extreme)+1)/(length(one_sided_null_scores)+1)
+                        corr_score = sign(observed.score - median_null_scores)*(-log10(permPval))
                 }
         } else {
                 permPval = NA
+                observed.score = NA
+                corr_score = NA
         }
-
-        if (output_phyloP){
-                out = list("permPval"=permPval, "phyloP_score"=observed.score)
-                out
-        } else {
-                permPval
-        }
+        
+        out = data.frame("permPval"=permPval, "corr_score"=corr_score, "uncorr_score"=observed.score)
+        out
 }
-
-
 
 
