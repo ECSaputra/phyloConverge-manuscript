@@ -1,8 +1,12 @@
 library(RERconverge)
 source("phenotype_tree_processing.R")
 
-
-
+#'Produce a permulated phenotype tree from the observed phenotype and phylogeny
+#' @param foregrounds a vector of foreground species names
+#' @param neutraltree a phylo object representing neutral evolution
+#' @param root_species the species to root the tree on
+#' @return permulated_tree a permulated phenotype tree with binary edge lengths (foreground edges = 1, background edges = 0)
+#' @export
 getPermulatedPhenotypeTree=function(foregrounds, neutraltree, root_species){
   foreground_tree = getTreeFromForegrounds(foregrounds, neutraltree, plotTree=F)
   pathvec = getPathvecfromForegroundTree(foreground_tree)
@@ -15,6 +19,14 @@ getPermulatedPhenotypeTree=function(foregrounds, neutraltree, root_species){
   permulated_tree
 }
 
+#'Produce permulated phenotype trees from the observed phenotype and phylogeny
+#' @param foregrounds a vector of foreground species names
+#' @param neutraltree a phylo object representing neutral evolution
+#' @param num_perms number of permulations
+#' @param root_species the species to root the tree on
+#' @param output_mod flag for the format of the output ("names" outputs permulated foreground names, "tree" outputs permulated phenotype trees)
+#' @return a list object containing permulated phenotypes
+#' @export
 getPermulatedPhenotypes=function(foregrounds, neutraltree, num_perms, root_species, output_mod="names"){
   fg_reps = lapply(1:num_perms, return_object, x=foregrounds)
   permulated_trees = lapply(fg_reps, getPermulatedPhenotypeTree, neutraltree=neutraltree, root_species=root_species)
@@ -27,6 +39,7 @@ getPermulatedPhenotypes=function(foregrounds, neutraltree, num_perms, root_speci
   }
 }
 
+#' @keywords internal
 getPathvecfromForegroundTree=function(foreground_tree){
   fg_edge_idx = which(foreground_tree$edge.length==1)
   fg_node_idx = foreground_tree$edge[fg_edge_idx,2]
