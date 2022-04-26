@@ -55,22 +55,21 @@ getElementsInMaf=function(elements_bed, maf){
 #' @export
 convertBedToFeature=function(bed_file, refseq, feature=NULL, strand=NULL, frame=NULL, attribute=NULL){
 	if (ncol(bed_file) < 3){
-		stop("Incomplete bed file.")
-	}
-	
+	  stop("Incomplete bed file.")
+	 }
+  
   if (is.null(attribute)){
     if (ncol(bed_file) > 3){
       attribute = bed_file[,4]
     } else {
-      attribute = .
+      attribute = "."
     }
   }
-	
-	if (is.null(feature)){
-		feature="."
-	}
-	featureout = feat(seqname= refseq, feature=".", start=bed_file[,2], end=bed_file[,3], attribute=attribute, strand=strand, frame=frame)
-	featureout
+  if (is.null(feature)){
+    feature="."
+  }
+  featureout = feat(seqname= refseq, feature=".", start=bed_file[,2], end=bed_file[,3], attribute=attribute, strand=strand, frame=frame)
+  featureout
 }
 
 
