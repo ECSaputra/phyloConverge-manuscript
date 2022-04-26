@@ -72,6 +72,17 @@ getTipDaughterNames=function(node,tree,allEdges,num_tips){
 }
 
 
+#'Returns tree (phylo) object from evolution model
+#' @param mod path to evolution model file
+#' @return tree tree object in the evolution model
+#' @export
+getTreeFromEvolMod=function(mod){
+  modObj = read.tm(mod)
+  tree_nwk = modObj$tree
+  tree = read.tree(text=tree_nwk)
+  tree
+}
+
 
 #'Converts foreground species names into a binary phenotype tree with the given topology
 #' @param foregrounds a character vector of foreground species
