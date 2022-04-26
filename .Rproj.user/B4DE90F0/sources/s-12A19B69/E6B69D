@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1650999954701.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "24129223",
+    "id" : "E6B69D",
+    "lastKnownWriteTime" : 1650999974,
+    "last_content_update" : 1650999974106,
+    "path" : "~/GitHub/phyloConverge/functions/phenotype_tree_processing.R",
+    "project_path" : "functions/phenotype_tree_processing.R",
+    "properties" : {
+        "cursorPosition" : "98,0",
+        "scrollLine" : "68"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
