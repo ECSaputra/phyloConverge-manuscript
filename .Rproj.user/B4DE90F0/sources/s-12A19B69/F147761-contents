@@ -29,7 +29,7 @@ phyloConverge=function(foregrounds, permulated_foregrounds, neutralMod, maf, ref
     out = NULL
     for (i in 1:nrow(feature)){
       print(paste("Scoring feature", i, "/", nrow(feature), feature_names[i]))
-      out_i = run_phyloConverge(foregrounds, permulated_foregrounds, neutralMod, maf, refseq, feature=feature[i,], alpha=alpha, min.fg=min.fg, method=method, mode=mode, adapt=adapt)
+      out_i = run_phyloConverge(fg_exist, permulated_foregrounds, neutralMod, maf, refseq, feature=feature[i,], alpha=alpha, min.fg=min.fg, method=method, mode=mode, adapt=adapt)
       out = rbind(out, out_i)
     }
   } else {
