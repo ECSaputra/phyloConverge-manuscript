@@ -5,6 +5,7 @@ require("foreach")
 
 option_list = list(make_option(c("-n", "--neutralmodpath"), type="character", default=NULL, help="file (.mod) path to neutral evolution model", metavar="character"),
 		   make_option(c("-p", "--perm"), type="character", default=NULL, help="file (.RDS) path to the list of permulated phenotypes", metavar="character"),
+		   make_option(c("-f", "--foregrounds"), type="character", default=NULL, help="txt file containing the names of the foreground species", metavar="character")
 		   make_option(c("-a", "--alnmasterfolder"), type="character", default=NULL, help="master folder containing all the alignments to score", metavar="character"),
 		   make_option(c("-o", "--outfolder"), type="character", default="outfolder/", help="output folder", metavar="character"),
 		   make_option(c("-r", "--refseq"), type="character", default=NULL, help="reference species", metavar="character"),
@@ -20,16 +21,13 @@ aln_master_folder = opt$alnmasterfolder
 outfolder = opt$outfolder
 refseq = opt$refseq
 no_cores = opt$numcores
+foregrounds_path = opt$foregrounds
 
-foregrounds = c("ochPri3", "hetGla2", "cavPor3", "chiLan1",
-		"HLmarMar1", "colAng1", "HLpilTep1", "rhiBie1",
-		"rhiRox1", "panHod1", "bosMut1", "HLoviAri4",
-		"HLoviCan1", "HLcamBac1", "vicPac2", "HLailFul1",
-		"ailMel1")
 
 print('Loading inputs')
 neutralMod = read.tm(neutralmod_path)
 permulated_foregrounds = readRDS(permulated_foregrounds_path)
+foregrounds = readLines(foregrounds_path)
 
 print('Exporting objects to cores')
 clust = makeCluster(no_cores)
