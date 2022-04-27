@@ -76,7 +76,7 @@ convertBedToFeature=function(bed_file, refseq, feature=NULL, strand=NULL, frame=
 
 
 #'Convert an entire alignment into a features object
-#' @param alignment_file path to alignment file
+#' @param aln msa object representing the alignment
 #' @param refseq the name of the sequence in the alignment that is used as a frame of reference
 #' @param feature the feature type name (e.g., "exon", "intron", "CDS", etc. Default NULL)
 #' @param strand a character string denoting the strand (e.g. "+", "-". Default NULL if strand is not relevant)
@@ -84,8 +84,8 @@ convertBedToFeature=function(bed_file, refseq, feature=NULL, strand=NULL, frame=
 #' @param attribute a character string denoting the label of the feature
 #' @return featureout a features object ready to use for phyloConverge
 #' @export
-convertAlignmentToFeature=function(alignment_file, refseq, feature=NULL, strand=NULL, frame=NULL, attribute=NULL){
-  aln = read.msa(alignment_file, refseq)
+convertAlignmentToFeature=function(aln, refseq, feature=NULL, strand=NULL, frame=NULL, attribute=NULL){
+  #aln = read.msa(alignment_file, refseq)
   aln_range = coord.range.msa(aln)
   if (is.null(feature)){
     feature='.'
