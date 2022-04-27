@@ -44,7 +44,7 @@ phyloConverge=function(foregrounds, permulated_foregrounds, neutralMod, maf, ref
 
 #' @keywords internal
 run_phyloConverge=function(foregrounds, permulated_foregrounds, neutralMod, maf, refseq, feature=NULL, alpha=0.05, min.fg=2, method="LRT", mode="CONACC", adapt=T){
-  observed.score = phyloP(neutralMod, msa=maf, features=feature, method="LRT", mode="CONACC", branches=fg_exist)
+  observed.score = phyloP(neutralMod, msa=maf, features=feature, method="LRT", mode="CONACC", branches=foregrounds)
   observed.score = observed.score$score
   if (adapt){
     max_permulations = length(permulated_foregrounds)
