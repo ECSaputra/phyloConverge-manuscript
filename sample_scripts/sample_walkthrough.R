@@ -48,5 +48,3 @@ bed = data.frame("chr"=rep("chr1",3), "start"=c(5, 25, 50), "end"=c(20, 35, 100)
 features = convertBedToFeature(bed, "mm10")
 
 score_multiple = phyloConverge_new(foregrounds, permulated_foregrounds, neutralMod, msa, "mm10", features, adapt=T)
-
-print('test')
