@@ -49,3 +49,4 @@ features = convertBedToFeature(bed, "mm10")
 
 score_multiple = phyloConverge_new(foregrounds, permulated_foregrounds, neutralMod, msa, "mm10", features, adapt=T)
 
+print('test')
