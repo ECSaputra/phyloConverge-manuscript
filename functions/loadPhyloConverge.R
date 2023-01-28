@@ -1,6 +1,0 @@
-setwd('functions')
-source('misc_functions.R')
-source('phyloConverge.R')
-source('phenotype_tree_processing.R')
-source('permulation_functions.R')
-setwd('..')
