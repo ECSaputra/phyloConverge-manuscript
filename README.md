@@ -21,3 +21,16 @@ The function takes the following parameters:
 * -n, --numperm: number of permutations
 
 * -o, outputpath: RDS output file path
+
+Below is an example on how to run the function:
+```
+Rscript correlateWithFunctionalDatasets.R -u exdata/cne-coords/acc_CNEs_phyloConverge.bed -m exdata/cne-coords/acc_CNEs_phyloConverge_merged.bed -v exdata/validation-dataset/eye.specific.mouse.ATAC.E11.5.bed -a exdata/cne-coords/mouseCNEs.bed -n 1000 -o exoutput/correlation-functional-data/correlation_embryonic_eye_specific.RDS
+```
+
+The output of the function is a list object containing the following variables:
+
+* num_overlaps_obs: the number of overlaps between the merged foreground elements and the validation dataset
+
+* num_overlaps_null: If numperms = X, a X-length vector containing the numbers of overlaps between merged coordinates of each (null) set of randomly selected elements and the validation dataset
+
+* Z: the Z-score computed from num_overlaps_obs with respect to the distribution of num_overlaps_null
