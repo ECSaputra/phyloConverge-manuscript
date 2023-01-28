@@ -12,3 +12,11 @@ The function takes the following parameters:
 * -u, --fgunmerged: path to BED file containing the coordinates of foreground elements (unmerged)
 
 * -m, --fgmerged: path to BED file containing the merged coordinates of foreground elements (obtained by running bedtools merge with using-defined distance parameter -d)
+
+* -v, --validation: path to BED file containing coordinates for the functional genomic dataset used for validation
+
+* -a, -allregionsPath: path to BED file containing the coordinates of all scored elements
+
+* -n, --numperm: number of permutations
+
+* -o, outputpath: RDS output file path
