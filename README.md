@@ -5,5 +5,10 @@ This repository stores supplementary scripts used in "Prediction of local conver
 
 ## Computing correlations between top-ranking regions with functional data
 
-Correlations between top-ranking regions with functional genomics data were computed using the R script `correlateWithFunctionalDatasets.R`
+Correlations between top-ranking regions ('foreground elements') with functional genomics data were computed using the R script `correlateWithFunctionalDatasets.R`. The [BEDtools](https://bedtools.readthedocs.io/en/latest/index.html) suite is required to run this function, and make sure that the binaries are added to the PATH environment variable.
 
+The function takes the following parameters:
+
+* -u, --fgunmerged: path to BED file containing the coordinates of foreground elements (unmerged)
+
+* -m, --fgmerged: path to BED file containing the merged coordinates of foreground elements (obtained by running bedtools merge with using-defined distance parameter -d)
