@@ -1,0 +1,72 @@
+> mm10
+AATGTTAGGATTTCTGA----AAACCA-GTCCCAAA----AGAG-------AGTATTTG----------C
+TCAGAATT
+> rn5
+AATGTTAGGATTTCTGA----AAACAG-GTCTCAAA----AGAG-------AGTATTTG----------C
+TCAGAATT
+> nanGal1
+--TGTTAGGGCTTCTGAAGATAGATAG-GTCCCAAA--ATAGAGTGCC-AAAATATTTG----------T
+TCC-----
+> micOch1
+AATGTTAGGATTTCTGA----AAATGG-GTCTCAAA----AGAGTGCC-GAAGTATTTG----------C
+TCAGAATT
+> hetGla2
+------AGACCTTCTGA----ATATAG-GTCTTAAA--ATAGAGTTCCAAAAATATTTG----------T
+GCATAATT
+> anoCar2
+**********************************************************************
+********
+> xenTro7
+**********************************************************************
+********
+> galGal4
+**********************************************************************
+********
+> cavPor3
+--------------TGA----ATACAA-GTCTTAAA--ATA-----------------------------
+-------T
+> speTri2
+AATGTTAGAGCTTCTCA----AAATAGAGTCCCAAA---------------AATATTGG----------T
+GCAGAATT
+> conCri1
+**********************************************************************
+********
+> bosTau7
+**********************************************************************
+********
+> oryCun2
+CATGTTAGAGCTTCTAA----AGATTT-GTTTCAAA--ACAGAATTCCAAAAATATTTG----------T
+GCAGAATT
+> ochPri3
+**********************************************************************
+********
+> hg19
+AATGTTAGAGATTCTGA----AGGCAG-GTCTCACAAAATGGAGTTCCAAAAATATTTTG---------T
+GCAGAAAT
+> macFas5
+AATGTTAGAGATTCTCA----AGGTAC-GTCTCACAAAATGGATTTCCAAAAATATTTTG---------T
+GCAGAAAT
+> otoGar3
+AACGTTAGAGAATCTGA----AGACAG-ATTTCAAAAAACAAAGTTCCAAAAATGTTTC----------T
+GCAGAATT
+> equCab2
+GATGTTAGAAATTCTGA----AGATAA-GTCTCGAAAAGTGGAGTTCCAAAAACATTTTG---------T
+GCAGA---
+> felCat5
+AATGTTAGAGATTCTGA----AGAGAA-GTTTCAAAAAGTGATGCCCCCAAAATATGTTGAATTATAAAT
+CCAGA-TT
+> canFam3
+**********************************************************************
+********
+> monDom5
+**********************************************************************
+********
+> loxAfr3
+**********************************************************************
+********
+> triMan1
+**********************************************************************
+********
+> chrAsi1
+**********************************************************************
+********

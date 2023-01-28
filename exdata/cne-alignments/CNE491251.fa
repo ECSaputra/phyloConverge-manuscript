@@ -1,0 +1,96 @@
+> mm10
+GTGAGTATAA----------------------TGAGAGGAAACCCAGAC---TAG---TTG--GGT--AG
+TTAC---------------------T-CTTGATGGGTAT-----AACCTGGCTGTAGGTAGCCAGCTGTC
+TATTTTTACC-----AGAT-AAATGAACTT-AGGT
+> rn5
+**********************************************************************
+****---------------------T-CTCACAGGGCAG-----GGCATGGTTGTAGGCAG---------
+-----TTAGC-----AAAC-AAATGA-------GT
+> nanGal1
+ATGGGTGTGG----------------------TGGGAGTGAGCTCAGATTT-TGG---CTGGGGAC----
+-------------------------T-CTCACAGGGCAC-----AGCAGGGTTGTAGGCAG---------
+-----GTAGC-----AAAC-AAGTGA-GTC-AGCT
+> micOch1
+-TAGGTGTGG----------------------TATGAGTGAACACAGACTC-TGG---CTGGAGGT--AG
+TTTT---------------------T-CTCACGGGGCAT-----GGCAGGGTTGTAGGCAG---------
+-----TTAGC-----AAAC-AAGTGA-GTC-AGCT
+> anoCar2
+**********************************************************************
+**********************************************************************
+***********************************
+> macFas5
+GTGGGTGTGG----------------------TAGGAGTGAGCTCAGACTT-TGG---CTGGAGACAGAG
+TTTT---------------------T-CTCACAGGGCAT-----GGCAAGC--------AGACAGCAGCG
+GGTGTTTGTC-----AAAT-AAATGA-GTC-AGCT
+> hg19
+GTGGGTGTGG----------------------TAGGAGTGAGCTCAGACTT-TGG---CTGGAGACAGAG
+TTTT---------------------T-CTCACAGGGCAT-----GGCAGAC--------AGACAGCAGCG
+GGTGTTTGTC-----AAAT-AAATGA-GTC-AGCT
+> hetGla2
+GTGGGTGTGG----------------------TAAGAGTGAGCTCAGACTT-TGG---CTGGAGAC----
+-------------------------T-CTTGCAGGGTAT-----GATAGGGCAGTGGGCAGGCAGCAGTG
+GGTGTTTGTC-----AAGT-AGGTGA-GTC-AGCT
+> galGal4
+**********************************************************************
+**********************************************************************
+***********************************
+> xenTro7
+**********************************************************************
+**********************************************************************
+***********************************
+> felCat5
+GTGGGTGTGG----------------------TAGGAGTGAGCTCAGACTT-TGG---CTGCGGAGGGAG
+TTTT---------------------T-CTCCCGGGCCAA-----GGCAGGGTTGTGGGCAGGCAGCAGTG
+GGCG-TTGGT-----GTGT-AAATGA-GTC-AGCT
+> chrAsi1
+------GTGG----------------------TAGTAGTGAGCTCAGACTT-TGG---CTAGGGAC----
+----A-GAGTTTTACTCACTCGGTGT-CTCCCAGGACAC-----AACAGTGTC-TAGGCAGGTACCAATG
+AATGTTTGTC-----AAAT--AATGA-ATCAAGCT
+> triMan1
+GTGGGTGTGG----------------------TAGTAGTGAGCTCAGACTT-TGG---CTGGGGAC----
+----ATGAGTTATACTCATTCTGTTT-CTCCCAGGGCAT-----GGCAGTGTC-TAGGCAGGCAGCAGTG
+GGTATTTGTC-----AAAT-AAATGA-GTC-AGCT
+> loxAfr3
+------GTGG----------------------CAGTAGTGAGCTCAAACTT-TGG---CTGGGGAC----
+----A-GAGTTTTAGTCATTCTGTTTCCTCTTAGGGCAT-----GGCAGGGTC-TAGGCAGGCAGCAGTG
+GGTGTTTGTC-----AAAT-AAGTGA-ATC-AGCT
+> conCri1
+GTGGGTGTGG----------------------TAGGTGTGAGCTCAGACTT-TGG---CTGAGGACAGAA
+TTTT---------------------T-CTTGCAGGGCAT-----GACAGGGTTGTAGGCAAGTAGCATTC
+GGTG-TTGGG-----AAAT-AATTGA-GTC-AGCT
+> canFam3
+ATGGGTGTGG----------------------TAGGAGTGAGCTCAGACTT-TGG---CTGTGAAGGGAG
+GTTT---------------------T-CTCCCAGGGCAA-----GGCAGGCCTGTAGGCGGGCAGCAGTG
+GGTG-TTGAT-----GCGT-AAATGA-GTC-AGCT
+> equCab2
+GTGGGTGTGG----------------------TAGGAGTGAGCTCAGACTT-TGG---CTGGGGACAGAG
+TTTT---------------------C-CTCCCAAGGCAT-----GGCAGGGTTGTAGGCAGGCAGCAGTG
+GGTG-TTAGC-----AAAT-AAATGA-GTC-AGCT
+> bosTau7
+GCAGGGTTAGCTTTGTCCTGTTTTGTTTAGTTTGAAAATGGAAACAAAATTGTAGGATCTGGGGTTAAAT
+GCCA---------------------T-GTTAAAGGGCTT-----AG-AGGATTGTAGGCAGGTAGGAGTG
+GGTG-TTTATTTTTAAAAT-AAGTGA-ATT-AGTT
+> oryCun2
+GTGGGTGTGG----------------------TAGGAGTGAGCTCAGA-----CG---CTGG--------
+----------------------------TCCCAGGGCAC-----GGCAGGGTTGTAGGCAGGCAGCAGTG
+GGTGTTTGTC-----AAAC-AAGTGA-GTC-AGCT
+> monDom5
+**********************************************************************
+**********************************************************************
+***********************************
+> cavPor3
+GTGGGTGTGG----------------------TAAGAGTGAGCTCAGACTT-TGG---CTGGAGAC----
+-------------------------T-CTCGCTGGGTAT-----GGTAGGGCTGCGGGCAGGCAGCAGTG
+GGTGTTTATC-----CAAT-AGGTGA-GTC-AGCT
+> speTri2
+GTGGGTGTGG----------------------TAGGAGTGAGCTCAGACTT-TGG---CTCGAGAC--AG
+TTTT---------------------T-CTTGCAGGGCAT-----C-CAAGGTTGTAGGCAGAGAGCAGTG
+GGTGTTTGTC-----AAAC-AGGTGA-GTC-AGCT
+> ochPri3
+GTGGGTGTGG----------------------TAGGAGTGAGCTCAGACTC-CCG---CTGGAGCC--AG
+TTTT------------------------TCATGGGGCACAGCAAGGCAGGGTTGTGGGCAGGCAGCAGTA
+GGTGTTTGTC-----AAACAAAATGA-GTC-AGCT
+> otoGar3
+----GTGAGT----------------------TAGGAGTACACTCAGACTT-TGG---CTGAGGATAGAG
+TTTT---------------------T-TTCGCAGGGCAT-----GGTAGGCTTGTCAG-AGACAGCAGTG
+GGTGTCTGTC----------AAATGA-GTC-AGCT

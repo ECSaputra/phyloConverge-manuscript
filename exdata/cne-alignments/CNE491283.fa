@@ -1,0 +1,96 @@
+> mm10
+C--CATACCCAGAACTTTGATCTCTATGGGACCAATGCCATTGAGTTCACTCATGCCCAGAACTTCTGTG
+TGGGAAGC-CACATACAC-----CATT---------------AAAA----GTTGGCACTGGCTACTGCTG
+GCCACCACCCATAAGTT----TGGGTAAA
+> rn5
+CAGCTCACCCAGCACTTTGATCTCTATGGGCTGACATCCATTGAGTTGGACCATGCCCTGTACTTCTGAG
+AATGAGAC-GAA------------------------------AAAGCCATGTCGGGCCTCATCAAGGCAG
+GTAACCACACCGGGGTTGTCCTGGTTGAA
+> nanGal1
+TTGCTCACCCAGCACTTTGATCTCTACGGGCTGACATCCATTGAGTTGGATCATGCCCTGAACTTCTGAG
+AATGAGAC-AA------------------------------*****************************
+*****************************
+> micOch1
+CAGCTCACCCAGTACTTTGATCTCTATGGGCTGACAGCCATTGAGTTGGATCATGCCCTGGACTTCTGAG
+AATGAGAC---------------------------------*****************************
+*****************************
+> anoCar2
+------ACCAAGCACTTTGATTTCCATGGGTTCACAGCTGTTCAGCTCACTCATGCCCTCAACTTCGGTG
+AAGGAAAC----------AAAATCCCC--------------*****************************
+*****************************
+> macFas5
+CAACTCACCCAGGACTTTGATCTCCATGGGCTGATTTCCGTTGAGTTCAACCATGCCCTGTACTTCTGAA
+AAGGAGAC-AAA------------------------------AAACCCGTGTCGGGCCTCATCCAGGCAG
+GTAACCACACCAGGGTTGTCCTGGTTAAA
+> hg19
+CAGCTCACCCAGGACTTTGATCTCCATGGGCTGATTTCCGTTGAGTTCAACCATGCCCTGTACTTCTGAA
+AAGGAGAC-AAA------------------------------AAACCCGTGTCGGGCCTCATCCAGGCAG
+GTAACCACACCGGGGTTGTCCTGGTTAAA
+> hetGla2
+GA-CTCACCCAGCACTTTGATCTCTATGGGCTGATTTCCATTGAGCTCAGTCATGCCCTGTACTTCAGAA
+AAGGACAC-G-------------------------------*****************************
+*****************************
+> galGal4
+**********************************************************************
+**********************************************************************
+*****************************
+> xenTro7
+------ACCCAGAACCTTGATCTCCACCGGCTCGCAGCCGTTCAGCTCCGTCATGCCGCGCACCTCAGTA
+AACGTGAC-------------------AAAGTCGCCAGTCTCAAAGCCGTGCCGAGCCTCATCCAAACAG
+GTCACCACCCCGGGGTTATCCTG--CAGA
+> felCat5
+TAGCTCACCCAAGACTTTGATCTCCATGGGCTGACTTCCGTTGAGTTCAACCATGCCCTGTACTTCTGAA
+AAGGAGAC---------------------------------*****************************
+*****************************
+> chrAsi1
+TAGCTCACCCAGAACTTTGATCTCTATGGGCTGATTTCCGTTGAGTTCGACCATGCCCTGTACTTCTGAA
+AAGGAGAC---------------------------------*****************************
+*****************************
+> triMan1
+TAGCTCACCCAGGACTTTGATTTCTATGGGCTGATTTCCGTTGAGTTCGATCATGCCCTGTACTTCTGAA
+AAGGAGAC---------------------------------*****************************
+*****************************
+> loxAfr3
+TAGCTCACCCAGAACTTTGATCTCTATGGGCTGATTTCCGTTGAGTTCGATCATGCCCTGTACTTCTGAA
+AAGGAGAC---------------------------------*****************************
+*****************************
+> conCri1
+TAGCTCACCCAGGACTTTGATCTCCATGGGCTGACTTCCATTGAGTTCAATCATGCCCTGTACTTCTGAA
+AAGGAGAC---------------------------------*****************************
+*****************************
+> canFam3
+TAGCTCACCCAAGACTTTGATCTCCATGGGCTGACTTCCATTGAGTTCAACCATGCCCTGTACTTCTGAA
+AAGGAGAC---------------------------------*****************************
+*****************************
+> equCab2
+TAGCTCACCCAGGACTTTGATCTCCATGGGCTGACTTCCGTTGAGTTCAATCATGCCCTGTACTTCTGAA
+AAGGAGAC---------------------------------*****************************
+*****************************
+> bosTau7
+TAGCTCACCCAGAACTTTGATTTCCATGGGCTGACTTCCATTGAGTTCAATCATGCCCTGTACTTCCGAA
+AAGGAGACG--------------------------------*****************************
+*****************************
+> oryCun2
+CGGCTCACCCAGGACTTTGATCTCTATGGGCTGGTTTCCATTGAGCTCAGTCATGCCCTGTACTTCGGAG
+AAGGAAAC-AAA------------------------------AAACCCATGTCGGGCCTCATCCAGGCAG
+GTAACCACACCAGGGTTGTCCTAGTTAAA
+> monDom5
+**********************************************************************
+**********************************************************************
+*****************************
+> cavPor3
+------ACCTAGCACTTTGATCTCTATGGGCTGATTTCCGTTGAGCTCATTCATGCCCTGTACTTCGGAA
+AAGG-------------------------------------*****************************
+*****************************
+> speTri2
+TAGCTCACCCAGGACTTTGATCTCTATGGGCTGATTTCCATTGAGCTCAATCATTCCCTGTACTTCTGAA
+AAGGAGAC---------------------------------*****************************
+*****************************
+> ochPri3
+CAGCTCACCCAGGACTTTGATCTCTATGAGTTGATTTCCATTGAGCTCAGTCATGCCCTGTACTTCCGAA
+AAGGAGAC-AAA-----------------------------*****************************
+*****************************
+> otoGar3
+TAGCTTACCCAGGACTTTAATCTCTATGGGCTGATTTCCATTAAGTTCAATCATTCCCTGTACTTCAGAA
+AAGGAGAC---------------------------------*****************************
+*****************************

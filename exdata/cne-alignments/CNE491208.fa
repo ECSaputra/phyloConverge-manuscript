@@ -1,0 +1,72 @@
+> mm10
+AAGAACCCTA----T------------T-ATGACACT-----TC-TAA-------GTC--CATCAC-TTC
+TG-AA-AA
+> triMan1
+AAGATAACCA----T------------T-ATCACTCT-----CT-TGATATCTT-CAA--CACCAA-TTC
+TG-AA-AA
+> equCab2
+AAGATAACCA----T------------T-ATCACCCT-----C--TGAT---AT-CAA--CACCAA-TTC
+TG-AA-AA
+> loxAfr3
+AAAATAATCA----T------------T-ATCACTCT-----CT-TGATATCTT-CAA--CACCAA-TTC
+TA-AA-AA
+> hetGla2
+GAGATTATCA----T------------T-ATCACCCT-----TT-TGGTATCTT-CAA--TATTAA-TTC
+TG-AA-AA
+> chrAsi1
+AAGTTAACCA----T------------T-ATCACCATACCATCT-TGATATCTTCCAA--CATCAA-TCC
+AA-AA-AA
+> rn5
+AAGATAGCCA----T------------T-ATTAC-------------------------------C-TCA
+TG-AA-AA
+> bosTau7
+AACATAATCA----T------------T-ATCACC-A-----C--TCATCATTT-TAA--TGATAA-TTC
+TG-AA-AA
+> conCri1
+AAGATAACCA----T------------T-ATCACCCT-----C--AGAT--CAT-CAA--TACCAA-CTG
+TG-AA-A-
+> felCat5
+AAG-TTACCA----T------------T-ATCACCTC-----C--TGATATCAT-CAA--TACCAA-TTC
+TG-AA-AA
+> macFas5
+AAGATAACCA----T------------T-ATCACCTG-----CT-TGATATCTT-CAA--CATCAA-TTC
+TGAAA-AA
+> hg19
+AAGATAACCATCATT------------T-ATCACCT------CT-TGACAACTG-CAA--TACCAA-TTC
+TG-AA-AA
+> nanGal1
+AAGATAACCC----CATCACCTTCTCAT-GTGATATC-----TT-----------CAA--TACCAT-TTT
+TG-AA-AA
+> ochPri3
+TAAATCACCA---TT------------TAATCACTCT-----CT-----------CAA--CACCAA-TTC
+TG-AA-AA
+> monDom5
+AAGATAAACA----C------------A-CTGA---------------TATATT-AAA--CATTAA-TTT
+TA-AA-AA
+> micOch1
+AAGATAACCA----T------------T---------------------------------ATCACGTCA
+TG-AA-AA
+> speTri2
+AAGATAACCA----T------------T-ATCAGAGT-----AC-TGATATCTT-CAA--CACCAA-TTT
+TG-AA-AA
+> cavPor3
+GATA--ATCA----T------------T-ACCACTCT-----TT-TGACATCTT-CAATTTATTGA-TTC
+TG-AG-AA
+> anoCar2
+GAGATTGTCC----A------------T-GTCAATT--------**************************
+********
+> galGal4
+CAAATGA-------A------------T-ACCAT---------C------------------TGAA-CCC
+AA-AATAA
+> canFam3
+AAG-TTACCA----T------------T-ATCACCTT-----C--TGAT---AT-CAA--TATCAA-TTC
+TG-AA-AA
+> oryCun2
+AAGATAACCA----T------------TAATCACCCT-----CT-----------CAA--CACCAA-TTC
+TG-AA-AA
+> otoGar3
+AAGATAACCA----T------------T-ATCACTCT-----CT-TGATATCTT-CAA--TACCAA-TTC
+CA-AA-AA
+> xenTro7
+TGGATAATCA----T------------T----------------ACAGTATATT-TATTCTGTTAG-TTG
+TG-AATGA

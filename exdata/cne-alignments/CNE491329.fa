@@ -1,0 +1,120 @@
+> mm10
+CTAAATACGAGTGACAAAATTTCAATCA----TTACTTCTAAGCTTCTGTGATTTCAAAGACTCTCTTGT
+TCCACAGGAAAACTCCATTAGGTATTGAACATAGGCTT-AATT-GGAGGAATACTGCTTTGAACT-----
+------GGAA-------CTAATTATTAATGTTGCAAAATCTCCTGCTGATTTCACATAGTTGAAAACATT
+TAACGTGTACTACATAGA--GAT--------T
+> rn5
+TTAAATACAAACGATTAAATTTCCATCA----TTTTTTCTAAGCTTCTGTGACTTCAAAGACTGTCTTCT
+TCTACAGGGGAACTCCGTAAGGAATTGAAGATAGGCTG-AATT-GGAGGAATAGTGCTTTGAACT-----
+------TGAA-------CTAATTATTAATGTTGCAAAATCTCCTGCTGATTACACATAGCTGAAAAATTT
+TAACTTGCGCTACATAGA--GAT--------T
+> hg19
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
+> conCri1
+TTAAATATAAATGACTAAATATTCACCA-TCATACCTGGTGAGCTTCTGTGAGTTCAAATACTAACTTAT
+TAT---GTAAAAATCCATAAAGAATTGAAAAGAGGCAACAATTCGAAGGGATAGTGCTTTTAACT-----
+------TGAA-------CTAGTTGTTTAAGTGGCAAAAT---ATGCTGATTA--CAGAGTTGAAAA-TTT
+TAATATCTACTATATAAAGATAT---------
+> speTri2
+TTAAATATAAATGACTAAATTTTTATCA-TAATTTCTGCAGAGCTGCTGTGACTTCAAAGACTGTGTTCT
+TCCACAGGGGAACTCTATAAGGAGTTGAAGACAGGCAACAATTTGGAGGAATATTGCTTTGAACT-----
+------TGAA-------CTAATTATTAAAGTTGCAAAATGTCATGCTGATTACACATAGTCAAAAA-TTT
+TAACTTTGACTACATAAA--GAGATGGAATAT
+> hetGla2
+TTAAATATAAATGACTGAATTTTCATCA-TCATTTCTACAGAGTTTCTGTGATTTCAAAGATTGTCTTCT
+TCCACAGGGGAACTCCATAAGGAGTTGAAGACA-----------GGAAGAATATTACTCTGAACT-----
+------TGAA-------CTAATTATTAGAGTTGCAAAATATCATGCTGATTAAACATAATCAAAAG-TTT
+TAACTTTGACTACATACAG-GAT--------T
+> macFas5
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
+> nanGal1
+TTAAATATAAGTGACTTAATTTTTATCATCATTTTTTGCAGAGCTTTTGTGACTTCAAAGACTACCTTCT
+TCCACAGGGGAACTCGATAAAGAACTGAAGATACACAACAGTTTCAAGGAATACTGCTTTGAACT-----
+------TGAA-------CTAATTACTAATGCTGCAAAATCTCACTCTGATTATATATACTTGAAAATGAT
+CAACTTGGACTACATAGA--GGT-TAAAATAT
+> oryCun2
+TTTAATTAAAATGGCTAAATTTTCATCA----CCTATTGTAA****************************
+**********************************************************************
+**********************************************************************
+********************************
+> equCab2
+TGAACTATAAATGACTAAATTTTCATCA-TCATTCCTGCAGAGCCTTCCTCACTTCAAAGCCTG-ATGCT
+TCCAAAGTGAAACTCCATAAGGAGTTGAAGACAGACAACAATTTGAAGGAATATTGCTTTGAACT-----
+------TGAA-------CTAACTATTAAAGTTGCAAAATGTCATGCTGATTACACATAGTCGAAAA-CTT
+TAATTTTGACTACATAAA-AGAT-TGGGATAT
+> bosTau7
+TTAAATATAAATGACTAAATTTTCATCA-TCATTCTTGCAGAGCTTCAGTGACTTCAAAGACTATCTTCT
+TCCACAGGAAAACTCAACTAGGAGTTGAAGACAGACAACAATTTGGAGGAATATTGCTTTGAACT-----
+------TGAG-------CTAATTATTAAAGTTGCAAAATGTCATGCTGATTATGCACAGTTAAAAA-CTT
+TACTATTCACTACATAAAGAGAT-TGGGATAT
+> loxAfr3
+TTAAATGTAAATGACTAAATTT---TCA-TCATCTCTGTAG-ACTTCCCTG-CTTCAAAGTCTGTCTTTT
+TTCACAGG-AAACTCCATAAGGAGTTGAAGACCGATAACGATTTGGGGTAAAATTGCTTTGTACT-----
+------TGAA-------CTAAGTATTAAAGTTGCAAAATATCACACTGATTACACATAGTC-AAAT-TTT
+TAATTTTGGCTACATAAAGAGAT-TGGAATAT
+> otoGar3
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
+> chrAsi1
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
+> triMan1
+TTAAATGTAAATGACTAAATTTTCATCA-TCATCTCCGTAG-ACTTCTATGACTTCAAATGCTGTCTTGT
+TTCACAAG-AAACTCCATATGGAGTTGAAGACAGATAACAATTTGGAGTAAAACTGCTTTTAACT-----
+------TGAA-------CTAATTATTGAAGTTGCAAAATGTCACGTTGATTACACATAGTCAAAAA-TTT
+TAATTTTGACTACGTAAAGAGAT-TGGAATAT
+> cavPor3
+TTAAACATAAATGACTAAATTTTCACTA-TCATTTATACAAAGCTTCTGTGATTTCAAAGATAGTGTTCT
+TCCACAGG------------GAAGTTGAAGATA-----------GGAATAATATTGCTCTGAAATTAGCT
+ATGCTCTGAATATTGCTCTAATTATTAGAGTTGTAAAGTATCATGCTGATCAAACATCATCAAACG-TTT
+TAACTTTGATTACATAAAGAGAT--------T
+> micOch1
+TTAAATATAAATGACTAAATTTCCATCA---TTTTTTTCCAAGCGTCTGTTACTACAAAAACTGTCTTGT
+TCCACAGGGGAACTCCATAAGGAGTTGATGATAGACAG-AATTAGGAGAAATATTGCTTTGAACT-----
+------TGAA-------CTAATTATTAATGTTGCAGAATTTCCTGCTGATTACACATAGTTGAAAATTTT
+TAACTTGGACTACATAGA--AAT--------T
+> ochPri3
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
+> felCat5
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
+> monDom5
+ATCAATTTAAATGTCTAAATTTTCATCA-TCATCCCTACAGAGCTCCCATGACTTCAAAGACTGTCTTCT
+TCCACAGGAAAACTCCACATGGAGTTGAAAACAGACAACAATTTGGAGAAGAATTGCTTTGAAAT-----
+------AGAA-------CTAATTATTAAAATTTTAAAATATCACGCTGATTATGCACAGTAGAAAA-CTT
+AAATTTTGACCACCTGGTATGCT-CAGAATAT
+> canFam3
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
+> anoCar2
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
+> xenTro7
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
+> galGal4
+**********************************************************************
+**********************************************************************
+**********************************************************************
+********************************
