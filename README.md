@@ -36,3 +36,13 @@ The output of the function is a list object containing the following variables:
 * num_overlaps_null: If numperms = X, a X-length vector containing the numbers of overlaps between merged coordinates of each (null) set of randomly selected elements and the validation dataset
 
 * Z: the Z-score computed from num_overlaps_obs with respect to the distribution of num_overlaps_null
+
+
+## Computing transcription factor binding site (TFBS)-scale convergence signals
+
+The computation of TFBS-scale convergence scores were performed in two steps. First, the `getIntersectingMotifCoords.R` function was used to get coordinates of motifs that intersect the foreground elements.
+
+
+```
+Rscript getIntersectingMotifCoords.R -u exdata/cne-coords/acc_CNEs_phyloConverge.bed -t exdata/TFBS-calls-mm10/ZSCA4_HUMAN.H11MO.0.D.mm10.bed -o exoutput/TFBS-analysis/intersecting-motifs/intersect_ZSCA4_HUMAN.H11MO.0.D.mm10/ -x ZSCA4_HUMAN.H11MO.0.D.mm10_
+```
