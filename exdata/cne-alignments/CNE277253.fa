@@ -1,0 +1,96 @@
+> mm10
+CCCAGCAGAGCTCATTAAGGATTTTCTATTTTTAAATGACTTTGGAAGGA--------------------
+----------------------------------------------------------------------
+-----------ATCATCA---T-TAT--T---TTT----TTTCTCATTTGCATTT
+> rn5
+CCCAGCAGAGCTCATTAAGGATTTTCTATTTTTAAATGACTTTGGAGGGA--------------------
+----------------------------------------------------------------------
+-----------ATCATTA----------T---TTT----TTTTTCATTTGCATTT
+> micOch1
+CCCAGCAGAGCTCATTAAGAATTTTCTATTTTTAAATGACTTTGGAGGGA--------------------
+----------------------------------------------------------------------
+-----------ATCATCA---T-TA---T---TTT--CCCCCCTCATTTGCATTT
+> conCri1
+CTCA--AGTGCTTATAAG--AATTCCCAGTTTAAAATGACTTTGGGTGGA--------------------
+----------------------------------------------------------------------
+-----------ATTATGT---G-TTTTTT---TTT----TCTCTTG---GTATTT
+> hetGla2
+CTCGGCCCAGCTCATTAAAAATTTGCTATTTTTTTATGGCTTAAGATGGAACATAGCTGCCGGGGATTTA
+GCTCAGTGGTACCACACCTACTTCGAAAGGCCAAGGTCCTGACTTTGATCCCCAGTACCGAGAAAAAAAA
+AAAAAAAGTGCAGCATAG---C-TA---AGATGTT----TTTCTCAATTGAATTT
+> macFas5
+CTCAACAGAGTTCATTAGGAATTTGCTGTTTT--AATGACTTT--ATGAA--------------------
+----------------------------------------------------------------------
+-----------AACATAG---G-TGAA-T---TTT----TTTCTTATTTACATTT
+> bosTau7
+CTCAACAGAGCTCATTAAGAATTTGCTACTTAAAAATGACTTTGGATGGA--------------------
+----------------------------------------------------------------------
+-----------AAAATTG---ACAAAAAT---TTT----TTTCTTGTCTGCATTT
+> ochPri3
+*********************************-----AA-TTGGATAG---------------------
+----------------------------------------------------------------------
+-----------AATTTAAAATG-AA---T---TTT----TTTCTTGTTTGCATTT
+> triMan1
+TTCAGCAGAGCTCATTAAACATTTGCTGTTTTAAAATGACTTCGGATGGA--------------------
+----------------------------------------------------------------------
+-----------AAAACAA---G-TG---A---TTTTGTTTTTCTCTTTTGCATTT
+> loxAfr3
+CTCAGCAGGACTCATTAAGAATTCGCTGTTTTAAGATGACTTTGGATGGA--------------------
+----------------------------------------------------------------------
+-----------AAAATAA---G-CG---A---TTT--TTTTTCTCTTTTGCATTT
+> cavPor3
+CTCAGCAGAGCTCATTAAGAACTTGCTGTTTTAAAATGACTTAAGATGGA--------------------
+----------------------------------------------------------------------
+-----------AACATAC---C-TA---A---ATT----TTTCTCATTTGCATTT
+> oryCun2
+*********************************-------TCTGGATGGA--------------------
+----------------------------------------------------------------------
+-----------AACATAAAGTG-GA---T---TTT----TTTCTTGTTTTCATTT
+> equCab2
+CTCGATAGAGCTCATTAAGAACATGCTGTTTTAAAATGAGTTTGGATCGA--------------------
+----------------------------------------------------------------------
+-----------ATGATAG---G-TGAAAT---TTT----TTCCTCATTTGCCTTT
+> felCat5
+CTCGACAGAACTCATTAAGAATTTGCTTTTTTTAAATGACTTTGGATAG---------------------
+----------------------------------------------------------------------
+-----------AAAATAG---G-GGAAAT---TTT----TCTCTCATTTGCATTT
+> canFam3
+CTCGACAGAGCTCATTAAGAGTTTGCTGTTTTAAAATGACTTTGGATGGA--------------------
+----------------------------------------------------------------------
+-----------AAAATAG---G-GGAAAC---TTT----TCTCTTGTTTGCATTT
+> hg19
+CTCAACAGAGCTCATT-----------------TAATGACTTT--ATGAA--------------------
+----------------------------------------------------------------------
+-----------AACATAG---G-TGAATT---TTT----TTTCTCACTTACATTT
+> otoGar3
+CTCAACAGAGCTCATTAAAAATTTGTCATTTTAAATTGACTTTGGATGGA--------------------
+----------------------------------------------------------------------
+-----------AATATAG---G-TGAT-T---TTT----GTTCTCATTTGCATTT
+> nanGal1
+TCCAGCAGAGCTCATTAAGAATTTTCTATTTCTAAATGACTTAGGAGGGA--------------------
+----------------------------------------------------------------------
+-----------AGCATCA---T-TT---T---TCC----CCCCTCATTTGCATTT
+> chrAsi1
+CTCTGTAGAGCTCA-TAAGAATCTGATGCTGTAAGTTGACTTTGGATGGA--------------------
+----------------------------------------------------------------------
+-----------AACATAA---G-TG---A---TTT------TGTTTTTTCTCTTT
+> speTri2
+CTCAGCAGAGCTCATTAA-AATTTGATATTTTAAAATGACTTAGGATGGG--------------------
+----------------------------------------------------------------------
+-----------AACATAG---C-TA---T---TTT----TTTCTCATTTGCATTT
+> monDom5
+**********************************************************************
+**********************************************************************
+*******************************************************
+> anoCar2
+**********************************************************************
+**********************************************************************
+*******************************************************
+> galGal4
+**********************************************************************
+**********************************************************************
+*******************************************************
+> xenTro7
+**********************************************************************
+**********************************************************************
+*******************************************************
