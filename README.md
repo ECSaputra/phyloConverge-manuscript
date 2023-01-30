@@ -18,11 +18,11 @@ The function takes the following parameters:
 
 * -v, --validation: path to BED file containing coordinates for the functional genomic dataset used for validation
 
-* -a, -allregionsPath: path to BED file containing the coordinates of all scored elements
+* -a, --allregionsPath: path to BED file containing the coordinates of all scored elements
 
 * -n, --numperm: number of permutations
 
-* -o, outputpath: RDS output file path
+* -o, --outputpath: RDS output file path
 
 Below is an example on how to run the function:
 ```
@@ -40,9 +40,18 @@ The output of the function is a list object containing the following variables:
 
 ## Computing transcription factor binding site (TFBS)-scale convergence signals
 
-The computation of TFBS-scale convergence scores were performed in two steps. First, the `getIntersectingMotifCoords.R` function was used to get coordinates of motifs that intersect the foreground elements.
+The computation of TFBS-scale convergence scores were performed in two steps. First, the `getIntersectingMotifCoords.R` script was used to get coordinates of motifs that intersect the foreground elements. This script is a wrapper for the bedtools 'intersect' function that is used to output two BED files, containing the coordinates of a specific motif that intersect a set of elements, as well as the coordinates of the intersecting elements, respectively. The script takes the following parameters:
 
+* -u, --fgunmerged: path to BED file containing the coordinates of foreground elements (unmerged)
 
+* -t, --motif_file: path to BED file containing the coordinates of calls for a specific motif
+
+* -o, --output_folder: path to output folder for the specific motif
+
+* -x, --prefix: character prefix for the output files for this motif
+
+Below is an example on how to run the function:
 ```
 Rscript getIntersectingMotifCoords.R -u exdata/cne-coords/acc_CNEs_phyloConverge.bed -t exdata/TFBS-calls-mm10/ZSCA4_HUMAN.H11MO.0.D.mm10.bed -o exoutput/TFBS-analysis/intersecting-motifs/intersect_ZSCA4_HUMAN.H11MO.0.D.mm10/ -x ZSCA4_HUMAN.H11MO.0.D.mm10_
 ```
+
