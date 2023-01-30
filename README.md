@@ -55,3 +55,24 @@ Below is an example on how to run the function:
 Rscript getIntersectingMotifCoords.R -u exdata/cne-coords/acc_CNEs_phyloConverge.bed -t exdata/TFBS-calls-mm10/ZSCA4_HUMAN.H11MO.0.D.mm10.bed -o exoutput/TFBS-analysis/intersecting-motifs/intersect_ZSCA4_HUMAN.H11MO.0.D.mm10/ -x ZSCA4_HUMAN.H11MO.0.D.mm10_
 ```
 
+In the second step, the `scoreTFBS.R` script was used to compute convergence scores for the identified motif coordinates using phyloConverge. The function takes the following parameters:
+
+* -p, --permulated_foregrounds_path: RDS file path to a list object containing permulated phenotypes
+
+* -t, --treepath: path to mod file representing the neutral substitution model
+
+* -f, --foregrounds: foregrounds species names, split by comma
+
+* -w, --aln_folder: folder path containing alignments for each element
+
+* -r, --refseq: reference species
+
+* -i, --int_folder: folder path to intersecting motifs info
+
+* -o, --output_path: RDS output file path
+
+Below is an example on how to run the function:
+```
+Rscript scoreTFBS.R -p exdata/permulated-foregrounds/permulated_phenotypes_500perms.RDS -t exdata/tree-model/eyeStudy.tree.mod -f chrAsi1,nanGal1,conCri1,hetGla2 -w exdata/cne-alignments/ -r mm10 -i exoutput/TFBS-analysis/intersecting-motifs/intersect_ZSCA4_HUMAN.H11MO.0.D.mm10/ -o exoutput/TFBS-analysis/TFBS-scores/scores_ZSCA4_HUMAN.H11MO.0.D.mm10.RDS
+```
+
